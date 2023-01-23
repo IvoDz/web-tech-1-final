@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d5fb65c0ff.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="intro-text">
+            <p>Writing your daily tasks on a list can help you increase productivity and decrease stress.
+                To-do lists enable you to segment your goals into achievable activities and complete large projects by
+                breaking them into smaller assignments</p>
+            <p>Advantages of using to do lists include :</p>
+            <img src="https://www.magpierecruitment.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM1d6RHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--be853a5e1c343a05cd60e57b554b8d68fe7a16c8/Productivity%20blog.png"
+                id="left-pic">
+            <img src="https://www.cornerstone.edu/wp-content/uploads/2021/12/1470-WEB-productivity.jpeg" id="right-pic">
+            <ol>
+                <li>You can better manage your daily tasks easily & efficiently.</li>
+                <li>Easily break your tasks into sub-tasks.</li>
+                <li>With projects, labels, filters, and priorities, you can tailor it to your personal workflow.</li>
+                <li>You can improve your productivity and measure the progress across each task.</li>
+                <li>You can easily share it with others.</li>
+                <li>Using to-do-lists, important tasks won’t be overlooked.</li>
+            </ol>
+
+            <p class="end-of-intro">What are you waiting for? Start using one today!</p>
+            <button id="hide-intro"> Hide </button>
+        </div>
+
+
+        <div class="main">
+            <div class="day">
+            </div>
+            <div class="tasks">
+                <div id="enter-tasks">
+                    <form>
+                        <label for="task"><strong>Enter task to do:</strong></label><br>
+                        <p id="emptytask"></p>
+                        <input type="text" id="task" name="task"><br>
+                        <label for="due"><strong>Due date: </strong> </label><br>
+                        <input type="date" id="due" name="due">
+                        <input type="checkbox" id="no-due" name="no-due">
+                        <label for="no-due">No due date</label>
+                        <br><br>
+                        <button class="add-task">Add task!</button>
+                    </form>
+                </div>
+                <div id="task-list">
+                    <ul>
+                    </ul>
+                    <p id="task-placeholder"><i>Your tasks will appear here</i></p>
+                </div>
+            </div>
+            <div class="quote">
+                <h4>Quote of the day : </h4>
+                <button id="quote-regenerate"> Show another </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="feedback">
+            <form action="https://www.w3schools.com/action_page.php" target="_blank" id="rating-form">
+                <label for="rating">How would you rate this tool? (1-10) </label>
+                <input type="text" name="mark" id="rating-field">
+                <input type="submit" value="Send feedback!">
+                <u><strong>
+                        <p id="final-msg"></p>
+                    </strong></u>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Rowdies:wght@300&display=swap");
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #fffbe9;
+}
+
+div {
+  border: 1px solid black;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+/* Intro banner */
+#intro-text {
+  text-align: center;
+  list-style-position: inside;
+  font-family: "Rowdies", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  position: relative;
+  background-color: #cde990;
+}
+
+#left-pic {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+  max-width: 20%;
+  max-height: 80%;
+}
+#right-pic {
+  position: absolute;
+  right: 40px;
+  max-width: 20%;
+  max-height: 80%;
+  bottom: 20px;
+}
+
+.end-of-intro {
+  color: red;
+}
+
+/* To do list */
+
+.main {
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
+  border-radius: 25px;
+}
+
+.tasks {
+  display: flex;
+  align-content: stretch;
+}
+
+#enter-tasks,
+#task-list {
+  padding: 50px;
+  color: black;
+  flex-grow: 1;
+}
+
+#task-placeholder {
+  color: black;
+}
+
+#enter-tasks {
+  background-color: #cde990;
+}
+
+#task-list {
+  background-color: #aacb73;
+}
+
+.quote {
+  border-radius: 0 0 25px 25px;
+}
+
+.day {
+  border-radius: 25px 25px 0 0;
+}
+
+.quote,
+.day {
+  background-color: #ffd4d4;
+  text-align: center;
+  color: black;
+}
+
+/* This is applied to to do list when intro banner is hidden */
+
+.center-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Feedback form */
+
+.feedback {
+  border: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
+}
+
+#final-msg {
+  text-align: center;
+  color: red;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1400px) {
+  #left-pic,
+  #right-pic {
+    display: none;
+  }
+}
+
+@media print {
+  body {
+    background-color: #ffffff;
+  }
+  #left-pic,
+  #right-pic {
+    display: none;
+  }
+  .feedback {
+    display: none;
+  }
+}
